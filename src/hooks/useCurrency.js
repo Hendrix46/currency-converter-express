@@ -8,7 +8,7 @@ export const useCurrency = (currency) => {
 
         fetchRates(currency).then(data=>setRates(data.rates));
 
-        const interval = setInterval(()=>fetchRates(currency), 15000);
+        const interval = setInterval(()=>fetchRates(currency).then(data=>setRates(data.rates)), 15000);
 
         return () => clearInterval(interval);
     }, [currency]);
