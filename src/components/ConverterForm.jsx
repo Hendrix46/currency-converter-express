@@ -10,9 +10,7 @@ function ConverterForm() {
     const [toCurrency, setToCurrency] = useState('')
     const [amount, setAmount] = useState(0)
     const [convertedAmount, setConvertedAmount] = useState(0)
-    const rates = useCurrency(baseCurrency)
-
-
+    const {rates, loading} = useCurrency(baseCurrency)
 
     const converter =(text)=>{
         const temp = []
@@ -41,36 +39,44 @@ function ConverterForm() {
         setConvertedAmount(result)
     }
 
+    if (loading) {
+        return (
+            <h1>Loading...</h1>
+        )
+    }
 
-    return (
-        <>
-            <Row>
-                <Col span={12} offset={6}>
-                    <form onSubmit={handleConvert}>
-                        <Col>
-                            <Input onChange={handleChange} placeholder="Convert Currency" />
-                        </Col>
+
+    if (!loading) {
+        return (
+            <>
+                <Row>
+                    <Col span={12} offset={6}>
+                        <form onSubmit={handleConvert}>
+                            <Col>
+                                <Input onChange={handleChange} placeholder="Convert Currency" />
+                            </Col>
+                            <Divider />
+                            <Col>
+                                <Button block onClick={handleConvert} type="primary">Convert</Button>
+                            </Col>
+                        </form>
                         <Divider />
                         <Col>
-                            <Button block onClick={handleConvert} type="primary">Convert</Button>
+                            <Card bordered={false}>
+                                <Statistic
+                                    title="Converted Amount"
+                                    value={convertedAmount}
+                                    precision={2}
+                                    valueStyle={{ color: '#3f8600', textAlign: 'center' }}
+                                    suffix={toCurrency}
+                                />
+                            </Card>
                         </Col>
-                    </form>
-                    <Divider />
-                    <Col>
-                        <Card bordered={false}>
-                            <Statistic
-                                title="Converted Amount"
-                                value={convertedAmount}
-                                precision={2}
-                                valueStyle={{ color: '#3f8600', textAlign: 'center' }}
-                                suffix={toCurrency}
-                            />
-                        </Card>
                     </Col>
-                </Col>
-            </Row>
-        </>
-    );
+                </Row>
+            </>
+        );
+    }
 }
 
 export default ConverterForm;

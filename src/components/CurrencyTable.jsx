@@ -19,10 +19,16 @@ const columns = [
 
 export const CurrencyTable = () => {
     const {baseCurrency} = useSelector(state => state.baseCurrencySlicer)
-    const rates = useCurrency(baseCurrency)
+    const {rates, loading} = useCurrency(baseCurrency)
     const data = ObjectToPairs(rates, 'rate', 'name')
 
-    if (rates) {
+    if (loading) {
+        return (
+            <h1>Loading...</h1>
+        )
+    }
+
+    if (!loading) {
         return (
             <Table pagination={false} columns={columns} dataSource={data} />
         )
