@@ -1,4 +1,4 @@
-export const API_KEY = "jZbsexpA5lnyOpqSCGOZ5XBnHb5VvJFr"
+export const API_KEY = "WF1cd6YiGlnPOCA0fFsxmIudib3GDICW"
 
 export const fakeRates = {
     success: true,
