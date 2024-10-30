@@ -14,5 +14,5 @@ id,parentId,name,lastName,position,image,email,phone_number,hire_date,job_id,sal
 13,9,Akobir ,Abduganiev,Specialist,,,,,,,,,,,,,,,,,,,
 14,9,Javlon,Sattorov,Specialist,,,,,,,,,,,,,,,,,,,
 15,9,Bakhriddin,Samatov,Specialist,,,,,,,,,,,,,,,,,,,
-16,8,Elena,Kogay,Team Lead,,,,,,,,,,,,,,,,,,,
+16,9,Elena,Kogay,Team Lead,,,,,,,,,,,,,,,,,,,
 17,16,Vladislav,,Specialist,,,,,,,,,,,,,,,,,,,
