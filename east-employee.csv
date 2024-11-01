@@ -16,3 +16,4 @@ id,parentId,name,lastName,position,image,email,phone_number,hire_date,job_id,sal
 15,9,Bakhriddin,Samatov,Specialist,,,,,,,,,,,,,,,,,,,
 16,8,Elena,Kogay,Team Lead,,,,,,,,,,,,,,,,,,,
 17,16,Vladislav,,Specialist,,,,,,,,,,,,,,,,,,,
+18,,Center of excelence,,Department,,DAUSTIN,590.423.4569,2005-07-24T20:00:00.000Z,IT_PROG,4800,,60,4000,Texas,10000,IT,1400,2014 Jabberwocky Rd,26192,US,United States of America,2,Americas
