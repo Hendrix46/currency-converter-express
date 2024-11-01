@@ -1,5 +1,6 @@
 id,parentId,name,lastName,position,image,email,phone_number,hire_date,job_id,salary,commission_pct,department_id,job_min_salary,location_state,job_max_salary,department_name,department_location_id,department_location_street_address,department_location_postal_code,department_location_country_id,department_location_country_name,department_location_country_region_id,department_location_country_region_name
 1,,Mr Kim,Sungmin,CEO,,SKING,515.123.4567,2003-07-16T19:00:00.000Z,AD_PRES,24000,,90,20080,Washington,40000,Executive,1700,2004 Charade Rd,98199,US,United States of America,2,Americas
+100,,Center of excelence,,Department,,,,,,,,,,,,,,,,,,,
 2,1,Marketing,,Department,,NKOCHHAR,515.123.4568,2005-10-20T20:00:00.000Z,AD_VP,17000,,90,15000,Washington,30000,Executive,1700,2004 Charade Rd,98199,US,United States of America,2,Americas
 3,1,Technical Affairs,,Department,,LDEHAAN,515.123.4569,2001-02-12T20:00:00.000Z,AD_VP,17000,,90,15000,Washington,30000,Executive,1700,2004 Charade Rd,98199,US,United States of America,2,Americas
 4,1,Commercial Affairs,,Department,,AHUNOLD,590.423.4567,2006-02-02T20:00:00.000Z,IT_PROG,9000,,60,4000,Texas,10000,IT,1400,2014 Jabberwocky Rd,26192,US,United States of America,2,Americas
@@ -16,4 +17,3 @@ id,parentId,name,lastName,position,image,email,phone_number,hire_date,job_id,sal
 15,9,Bakhriddin,Samatov,Specialist,,,,,,,,,,,,,,,,,,,
 16,8,Elena,Kogay,Team Lead,,,,,,,,,,,,,,,,,,,
 17,16,Vladislav,,Specialist,,,,,,,,,,,,,,,,,,,
-18,,Center of excelence,,Department,,DAUSTIN,590.423.4569,2005-07-24T20:00:00.000Z,IT_PROG,4800,,60,4000,Texas,10000,IT,1400,2014 Jabberwocky Rd,26192,US,United States of America,2,Americas
